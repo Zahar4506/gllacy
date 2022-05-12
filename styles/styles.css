@@ -1,0 +1,101 @@
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/inter-400.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/inter-700.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Inter";
+  font-style: normal;
+  font-weight: 900;
+  src: url("../fonts/inter-900.woff2") format("woff2");
+  font-display: swap;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+html {
+  box-sizing: border-box;
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  font-family: 'Inter', sans-serif;
+  /*font-size: 18px;*/
+  /*line-height: 30px;*/
+  /*color: #000000;*/
+}
+
+/*Кастомные переменные для пере использования*/
+:root {
+  /*BASIC цвета*/
+  --color-basic-extra-dark: #2D3440;
+  --color-basic-dark: #565C66;
+  --color-basic-neutral: #B9B9B9;
+  --color-basic-light: #E7E7E7;
+  --color-basic-extra-light: #FCFCFC;
+  --color-basic-extra-white: #FFFFFF;
+  /*SPECIAL цвета*/
+  --color-special-extra-bright: #FF2F64;
+  --color-special-bright: #FF4A78;
+  --color-special-neutral: #FF7799;
+  --color-special-light: #FEAFC3;
+  --color-special-extra-light: #FFCBD8;
+  --color-special-blue: #69A9FF;
+  --color-special-light-blue: #9FC8FF;
+  --color-special-yellow: #FCC850;
+  --color-special-light-yellow: #FCDC92;
+
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.main-container {
+  flex-grow: 1;
+}
+
+.page-container {
+  max-width: 1170px;
+  width: 100%;
+  margin: 0 auto;
+}
+
+/*Классы для изменения цвета фона
+ TODO: Нет идей как без js реализовать замени/добавление класса?*/
+.body-color.pink {
+  background-color: var(--color-special-extra-light);
+}
+
+.body-color.blue {
+  background-color: var(--color-special-blue);
+}
+
+.body-color.yellow {
+  background-color: var(--color-special-yellow);
+}
+
