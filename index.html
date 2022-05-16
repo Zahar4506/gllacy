@@ -9,10 +9,184 @@
 <body class="body-color pink">
 <div class="page-container">
   <header class="page-header">
+    <nav class="navigation">
+      <a class="logo" href="#">
+        <img class="logo-img logo-header" src="./images/logo_gllacy.svg" width="137" height="56" alt="Логотип Gllacy">
+      </a>
+
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">Доставка и оплата</a>
+        </li>
+        <li class="navigation-item">
+          <a class="navigation-link" href="#">О компании</a>
+        </li>
+      </ul>
+
+      <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+      <ul class="navigation-list">
+        <li class="navigation-item">
+          <button class="button" type="button">
+            <span class="visually-hidden">Поиск</span>
+          </button>
+        </li>
+        <li class="navigation-item">
+          <!-- TODO: icon -> <svg>   -->
+          <button class="button" type="button">Вход
+          </button>
+        </li>
+        <li class="navigation-item">
+          <!-- TODO: icon -> <svg>   -->
+          <button class="button" type="button">Пусто
+          </button>
+        </li>
+      </ul>
+    </nav>
 
   </header>
+
   <main class="main-container">
     <h1 class="visually-hidden">Gllacy Shop - магазин мороженного собственного производства.</h1>
+    <section class="slider-container">
+      <h2 class="visually-hidden">Актуальные предложения.</h2>
+      <ol class="slider-text">
+        <li class="slider-item">
+          <b class="slider-title">Нежный пломбир с клубничным джемом</b>
+          <p class="slider-description">Натуральное мороженое из свежих сливок
+            и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
+          <a class="button" href="#">Заказать</a>
+        </li>
+        <li class="slider-item">
+          <b class="slider-title">Сливочное мороженое со вкусом банана</b>
+          <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
+            даже в самый жаркий летний день. </p>
+          <a class="button" href="#">Заказать</a>
+        </li>
+        <li class="slider-item">
+          <b class="slider-title">Карамельный пломбир с маршмеллоу</b>
+          <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
+            сердца сладкоежек всех возрастов.</p>
+          <a class="button" href="#">Заказать</a>
+        </li>
+      </ol>
+
+      <!-- TODO: повесить кнопки псевдоэлементом на slider-img-current     -->
+      <ol class="slider-img">
+        <li class="slider-item">
+          <img class="slider-img slider-img-current" src="" width="" height="" alt="Клубничное мороженное">
+        </li>
+        <li class="slider-item">
+          <img class="slider-img" src="" width="" height="" alt="Сливочное мороженное">
+        </li>
+        <li class="slider-item">
+          <img class="slider-img" src="" width="" height="" alt="Карамельный пломбир с маршмеллоу">
+        </li>
+      </ol>
+
+      <div class="slider-control">
+        <button class="slider-control-button slider-current" type="button">
+          <span class="visually-hidden">Переход к слайду 1</span>
+        </button>
+        <button class="slider-control-button slider-current" type="button">
+          <span class="visually-hidden">Переход к слайду 2</span>
+        </button>
+        <button class="slider-control-button slider-current" type="button">
+          <span class="visually-hidden">Переход к слайду 3</span>
+        </button>
+      </div>
+
+      <ul class="social-list">
+        <li class="social-item">
+          <a class="social-link" href="https://vk.com/htmlacademy" target="_blank">
+            <img src="" alt="">
+            <span class="visually-hidden">Vkontakte</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://www.facebook.com/htmlacademy" target="_blank">
+            <img src="" alt="">
+            <span class="visually-hidden">Facebook</span>
+          </a>
+        </li>
+        <li class="social-item">
+          <a class="social-link" href="https://www.instagram.com/htmlacademy" target="_blank">
+            <img src="" alt="">
+            <span class="visually-hidden">Instagram</span>
+          </a>
+        </li>
+      </ul>
+    </section>
+
+    <section class="stock-container">
+      <h2 class="visually-hidden">Акции.</h2>
+      <span class="title">Заказывайте мороженое и получайте подарки!</span>
+      <div class="stock-card">
+        <span class="stock-title">Малинка даром!</span>
+        <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+        <a class="button">Хочу подарок</a>
+      </div>
+      <div class="stock-card">
+        <span class="stock-title">Маршмеллоу даром!</span>
+        <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+        <a class="button">Хочу подарок</a>
+      </div>
+    </section>
+
+    <section class="favorite-container">
+      <h2 class="visually-hidden">Популярное мороженное</h2>
+      <span class="title">Попробуйте самые популярные вкусы нашего мороженого</span>
+      <div class="catalog-card">
+        <img src="" alt="" width="" height="">
+        <span class="catalog-title">Малинка</span>
+        <p>Сливочное мороженое с малиновым джемом</p>
+        <div>
+          <b class="price">310 ₽/кг</b>
+          <button class="button" type="button">
+            <svg></svg>
+            <span class="visually-hidden">Добавить в корзину</span>
+          </button>
+        </div>
+      </div>
+      <div class="catalog-card">
+        <img src="" alt="" width="" height="">
+        <span class="catalog-title">Фисташка</span>
+        <p>Фисташковый пломбир с кусочками шоколада</p>
+        <div>
+          <b class="price">340 ₽/кг</b>
+          <button class="button" type="button">
+            <svg></svg>
+            <span class="visually-hidden">Добавить в корзину</span>
+          </button>
+        </div>
+      </div>
+      <div class="catalog-card">
+        <img src="" alt="" width="" height="">
+        <span class="catalog-title">Черника</span>
+        <p>Крем-брюле с черничным джемом</p>
+        <div>
+          <b class="price">330 ₽/кг</b>
+          <button class="button" type="button">
+            <svg></svg>
+            <span class="visually-hidden">Добавить в корзину</span>
+          </button>
+        </div>
+      </div>
+      <div class="catalog-card">
+        <img src="" alt="" width="" height="">
+        <span class="catalog-title">Бабл-гам</span>
+        <p>Ванильный пломбир со сладкой посыпкой</p>
+        <div>
+          <b class="price">320 ₽/кг</b>
+          <button class="button" type="button">
+            <svg></svg>
+            <span class="visually-hidden">Добавить в корзину</span>
+          </button>
+        </div>
+      </div>
+    </section>
   </main>
 
   <footer class="page-footer">
