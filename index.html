@@ -10,40 +10,44 @@
 <div class="page-container">
   <header class="page-header">
     <nav class="navigation">
-      <a class="logo" href="#">
-        <img class="logo-img logo-header" src="./images/logo_gllacy.svg" width="137" height="56" alt="Логотип Gllacy">
-      </a>
+      <div class="navigation-block">
+        <a class="logo" href="#">
+          <img class="logo-img logo-header" src="./images/logo_gllacy.svg" width="137" height="56" alt="Логотип Gllacy">
+        </a>
 
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">Доставка и оплата</a>
-        </li>
-        <li class="navigation-item">
-          <a class="navigation-link" href="#">О компании</a>
-        </li>
-      </ul>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <a class="navigation-link navigation-link-current" href="catalog.html">Каталог</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">Доставка и оплата</a>
+          </li>
+          <li class="navigation-item">
+            <a class="navigation-link" href="#">О компании</a>
+          </li>
+        </ul>
+      </div>
 
-      <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
-      <ul class="navigation-list">
-        <li class="navigation-item">
-          <button class="button" type="button">
-            <span class="visually-hidden">Поиск</span>
-          </button>
-        </li>
-        <li class="navigation-item">
-          <!-- TODO: icon -> <svg>   -->
-          <button class="button" type="button">Вход
-          </button>
-        </li>
-        <li class="navigation-item">
-          <!-- TODO: icon -> <svg>   -->
-          <button class="button" type="button">Пусто
-          </button>
-        </li>
-      </ul>
+      <div class="navigation-block">
+        <a class="contacts-phone" href="tel:+78005558628">+7 800 555-86-28</a>
+        <ul class="navigation-list">
+          <li class="navigation-item">
+            <button class="button" type="button">
+              <span class="visually-hidden">Поиск</span>
+            </button>
+          </li>
+          <li class="navigation-item">
+            <!-- TODO: icon -> <svg>   -->
+            <button class="button" type="button">Вход
+            </button>
+          </li>
+          <li class="navigation-item">
+            <!-- TODO: icon -> <svg>   -->
+            <button class="button" type="button">Пусто
+            </button>
+          </li>
+        </ul>
+      </div>
     </nav>
 
   </header>
@@ -54,20 +58,20 @@
       <h2 class="visually-hidden">Актуальные предложения.</h2>
       <ol class="slider-text">
         <li class="slider-item">
-          <b class="slider-title">Нежный пломбир с клубничным джемом</b>
-          <p class="slider-description">Натуральное мороженое из свежих сливок
+          <b class="slider-title title-1">Нежный пломбир с клубничным джемом</b>
+          <p class="slider-description paragraph-1">Натуральное мороженое из свежих сливок
             и молока с вкуснейшим клубничным джемом – это идеальный десерт для всей семьи.</p>
           <a class="button" href="#">Заказать</a>
         </li>
         <li class="slider-item">
-          <b class="slider-title">Сливочное мороженое со вкусом банана</b>
-          <p class="slider-description">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
+          <b class="slider-title title-1">Сливочное мороженое со вкусом банана</b>
+          <p class="slider-description paragraph-1">Сливочное мороженое с ярким банановым вкусом подарит вам свежесть и наслаждение
             даже в самый жаркий летний день. </p>
           <a class="button" href="#">Заказать</a>
         </li>
         <li class="slider-item">
-          <b class="slider-title">Карамельный пломбир с маршмеллоу</b>
-          <p class="slider-description">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
+          <b class="slider-title title-1">Карамельный пломбир с маршмеллоу</b>
+          <p class="slider-description paragraph-1">Необычный сладкий десерт с карамельным топпингом и кусочками зефира завоюет
             сердца сладкоежек всех возрастов.</p>
           <a class="button" href="#">Заказать</a>
         </li>
@@ -122,22 +126,24 @@
 
     <section class="stock-container">
       <h2 class="visually-hidden">Акции.</h2>
-      <span class="title">Заказывайте мороженое и получайте подарки!</span>
-      <div class="stock-card">
-        <span class="stock-title">Малинка даром!</span>
-        <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
-        <a class="button">Хочу подарок</a>
-      </div>
-      <div class="stock-card">
-        <span class="stock-title">Маршмеллоу даром!</span>
-        <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
-        <a class="button">Хочу подарок</a>
+      <span class="title title-2">Заказывайте мороженое и получайте подарки!</span>
+      <div class="stock-card-container">
+        <div class="stock-card">
+          <span class="stock-title">Малинка даром!</span>
+          <p>При покупке 2 кг любого фруктового мороженого добавим в ваш заказ банку малинового варенья бесплатно.</p>
+          <a class="button">Хочу подарок</a>
+        </div>
+        <div class="stock-card">
+          <span class="stock-title">Маршмеллоу даром!</span>
+          <p>При покупке 2 кг пломбира добавим в ваш заказ упаковку нежных зефирок совершенно бесплатно.</p>
+          <a class="button">Хочу подарок</a>
+        </div>
       </div>
     </section>
 
     <section class="favorite-container">
       <h2 class="visually-hidden">Популярное мороженное</h2>
-      <span class="title">Попробуйте самые популярные вкусы нашего мороженого</span>
+      <span class="title title-2">Попробуйте самые популярные вкусы нашего мороженого</span>
       <div class="catalog-card">
         <img src="" alt="" width="" height="">
         <span class="catalog-title">Малинка</span>
@@ -190,7 +196,7 @@
 
     <section class="advantages">
       <h2 class="visually-hidden">Преимущества</h2>
-      <span class="title">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</span>
+      <span class="title title-2">Магазин Глейси – это онлайн и офлайн-магазин по продаже мороженого собственного производства на развес</span>
       <ul class="advantages-list-col">
         <li class="advantages-item">
           <img class="advantages-icon" src="" width="48" height="48" alt="">
@@ -240,7 +246,7 @@
     <section class="delivery-container">
       <h2 class="visually-hidden">Доставка.</h2>
       <div class="delivery-block">
-        <span class="title">Доставка любимого мороженого на дом</span>
+        <span class="title title-2">Доставка любимого мороженого на дом</span>
         <p>Хочется полакомиться любимым дессертом, но нет времени съездить в магазин? Закажите доставку мороженого на
           дом, и курьер привезёт вам ваш заказ в течение часа!</p>
       </div>
